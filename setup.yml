@@ -1,5 +1,5 @@
 Setup LAMP Stack
-- hosts: localhost
+- hosts: webservers
   tasks:
     - name: installing the lamp stack
       become: yes
@@ -23,5 +23,5 @@ Setup LAMP Stack
       become: yes
       become_user: root
       copy:
-        src: /tmp/index.html
+        src: index.html
         dest: /var/www/html/index.html
