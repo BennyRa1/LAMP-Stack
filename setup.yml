@@ -1,4 +1,5 @@
 - hosts: webservers
+  become: True
   tasks:
     - name: installing the lamp stack
       become: yes
